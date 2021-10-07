@@ -1,4 +1,4 @@
-import classes from "../../../styles/Car.module.scss";
+import classes from "../../../../styles/Car.module.scss";
 import {useState} from "react";
 
 function Car(props) {
@@ -16,14 +16,14 @@ function Car(props) {
 
     return (
         <div className={classes.Car}>
-            <img className={classes.preview} src={props.preview} alt=""/>
+            <img className={classes.preview} src={state.preview} alt=""/>
             <div className={classes.info}>
                 <div>
-                    <span>{props.brand}</span>
-                    <span>{props.model}</span>
+                    <span>{state.brand}</span>
+                    <span>{state.model}</span>
                 </div>
-                <span className={classes.year}>{props.year}</span>
-                <strong className={classes.rent}>{props.rent}</strong>
+                <span className={classes.year}>{state.year}</span>
+                <strong className={classes.rent}>{state.rent}</strong>
             </div>
             <button className={classes.button} onClick={btnHandler}>Оформить</button>
 

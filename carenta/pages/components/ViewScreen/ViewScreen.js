@@ -5,7 +5,22 @@ function ViewScreen() {
 
     return (
         <div className={classes.ViewScreen}>
-            <CarList />
+            <CarList carList = {[
+                {
+                    preview: '',
+                    brand: 'Mazda',
+                    model: '363',
+                    year: 2001,
+                    rent: 1200
+                },
+                {
+                    preview: '',
+                    brand: 'Audi',
+                    model: 'A3',
+                    year: 2007,
+                    rent: 2000
+                }
+            ]}/>
         </div>
     );
 }
