@@ -1,7 +1,9 @@
-import '../styles/globals.css'
+import '../styles/globals.css';
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+import Layout from './components/hoc/Layout/Layout'
+
+function App() {
+    return <Layout/>;
 }
 
-export default MyApp
+export default App

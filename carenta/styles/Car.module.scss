@@ -1,0 +1,53 @@
+.Car {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 24px;
+    margin: 12px;
+    border-radius: 6px;
+
+    background: #555;
+}
+.preview {
+    width: 250px;
+    height: 250px;
+    border-radius: 6px;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    span {
+        font-size: 1.5em;
+        margin: 0 12px;
+        color: #fff;
+    }
+}
+.year {
+    color: #fff;
+    font-size: 1.5em;
+}
+.rent {
+    margin: 12px 0;
+
+    font-size: 24px;
+    color: #fff;
+    &:after {
+        content: " ₽/час";
+    }
+}
+.button {
+    margin: 12px 0;
+    width: 100%;
+    padding: 6px 12px;
+
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px;
+    background-color: rgba(255,255,255,.1);
+    border-radius: 5px;
+    border: 1px solid #fff;
+}
